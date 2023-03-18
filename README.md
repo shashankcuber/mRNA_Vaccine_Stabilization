@@ -1,2 +1,1 @@
-# mRNA_Vacc_Stabilization
-CMPUT-606 Project on Towards stabilization of mRNA Vaccine
+# mRNA Vaccine Degradation Prediction and finding stable RNA secondary structure
