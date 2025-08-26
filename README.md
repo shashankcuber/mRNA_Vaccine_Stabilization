@@ -1,13 +1,48 @@
-# mRNA Vaccine Degradation Prediction and finding stable RNA secondary structure
-Dataset : https://drive.google.com/drive/folders/1QrWTHn2ykLCfl6BapbO7BWvMi1soxlnJ?usp=share_link 
+# mRNA Vaccine Degradation Prediction & RNA Secondary Structure Stabilization
 
-Steps to run:
- 1. Copy the Dataset to your own drive.
- 2. For getting wandb key of yours follow this -> https://docs.wandb.ai/quickstart
- 3. If you don't want to train don't run the Training bi-GRU section you can load the trained model from bi-gru.pt(Follow Inference section code for more details) 
- 4. Everything is setup just run the mRNA_vaccine_stabilizer.ipynb on google colab
+This repository contains code and resources for predicting **mRNA vaccine degradation** and finding **stable RNA secondary structures**.  
 
-NOTE: For any path changes in extracting RNA packages edit the following files as you feel
-1. install.sh : https://drive.google.com/file/d/1upYrTLzoIC4EbpWEYeW1cdnNK4pCMCT9/view?usp=share_link
-2. make_arnie_conf.sh: https://drive.google.com/file/d/1upYrTLzoIC4EbpWEYeW1cdnNK4pCMCT9/view?usp=share_link
+📌 Accepted as a **poster paper at [ICCABS 2023](https://iccabs.org/)** 🎉  
+📄 [Read the Paper (PDF)](ICCABS_2023_paper_31.pdf)
 
+---
+
+## 🚀 Getting Started
+
+### 1. Dataset
+Download and copy the dataset to your own Google Drive:  
+👉 [Dataset Link](https://drive.google.com/drive/folders/1QrWTHn2ykLCfl6BapbO7BWvMi1soxlnJ?usp=share_link)
+
+---
+
+### 2. Setup Weights & Biases (wandb)
+To log experiments with **wandb**, create an account and get your API key by following:  
+👉 [Wandb Quickstart Guide](https://docs.wandb.ai/quickstart)
+
+---
+
+### 3. Running the Notebook
+The main workflow is provided in the Jupyter notebook:  
+**`mRNA_vaccine_stabilizer.ipynb`**
+
+You can run it directly on **Google Colab**.
+
+- **Training:** If you want to train from scratch, run the *Training bi-GRU* section.  
+- **Inference only:** If you don’t want to train, skip training and load the pre-trained model (`bi-gru.pt`) as shown in the *Inference* section.
+
+---
+
+## ⚙️ Configuration Notes
+
+If you make changes to dataset or package paths, update the following files accordingly:
+
+1. **install.sh** → [Download](https://drive.google.com/file/d/1upYrTLzoIC4EbpWEYeW1cdnNK4pCMCT9/view?usp=share_link)  
+2. **make_arnie_conf.sh** → [Download](https://drive.google.com/file/d/1upYrTLzoIC4EbpWEYeW1cdnNK4pCMCT9/view?usp=share_link)  
+
+---
+
+## 📌 Summary
+- Predicts **mRNA degradation sites** using a **bi-GRU model**.  
+- Identifies **stable RNA secondary structures** to aid vaccine design.  
+- Ready-to-run pipeline with both **training and inference modes**.  
+---
